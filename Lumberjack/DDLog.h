@@ -561,6 +561,11 @@ typedef int DDLogMessageOptions;
 **/
 - (NSString *)methodName;
 
+/**
+ * Queue a log message
+ **/
++ (void)queueLogMessage:(DDLogMessage *)logMessage asynchronously:(BOOL)asyncFlag;
+
 @end
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
